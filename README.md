@@ -1,80 +1,141 @@
-
 # MAKO Cake and Bakery – Odoo 18 ERP Implementation
 
-**Group Academic Project | Universitas Esa Unggul | 2026**
+**Enterprise Resource Planning | Business Process Modeling | System Implementation**
+
+Academic Group Project · Universitas Esa Unggul · 2026
+
+---
 
 ## Project Overview
 
 MAKO Cake and Bakery is an academic group project focused on implementing an integrated Enterprise Resource Planning (ERP) system using Odoo 18.
 
-The project aims to demonstrate how ERP systems support business operations through integrated modules, business process modeling, system configuration, and process execution.
+The project translates previously modeled business processes into an ERP environment by mapping business activities to relevant Odoo modules, configuring system components, simulating operational transactions, and documenting the implementation results.
 
-This repository presents an overview of the group project and highlights my individual contribution, which focused on Human Resource Management (HRM) and Expenses implementation.
+The implementation covers multiple business functions, including Marketing, CRM, Service, Sales, Inventory, Purchasing, Manufacturing, Quality Control, Accounting, Human Resource Management (HRM), and Expenses.
+
+This repository documents the overall project scope and highlights my individual contribution, particularly in HRM and Expenses implementation, as well as Human Resource business process modeling using BPMN.
+
+## Project Objectives
+
+- Translate business process models into Odoo ERP workflows.
+- Map business activities to relevant Odoo modules.
+- Configure system components and supporting master data.
+- Simulate business transactions across different functional areas.
+- Examine integration between business processes and ERP modules.
+- Document implementation results and system testing activities.
 
 ## Project Scope
 
-The group project covered several business functions:
+The group project covers the following business functions:
 
-- **Marketing & Accounting** – Marketing activities and financial management.
-- **CRM & Service** – Customer relationship management and service processes.
-- **Inventory & Purchasing** – Inventory control and procurement processes.
-- **Manufacturing & Quality Control** – Production workflows and quality management.
-- **HRM & Expenses** – Employee administration, human resource processes, and expense management.
+| Business Function | Implementation Scope |
+|---|---|
+| Marketing | Campaign management and email marketing |
+| CRM & Service | Customer management, sales pipeline, and service processes |
+| Sales & POS | Sales orders, outlet transactions, and payments |
+| Inventory & Purchasing | Stock management, procurement, and warehouse operations |
+| Manufacturing & Quality Control | Production orders, Bill of Materials (BoM), and quality checks |
+| Accounting | Invoices, vendor bills, payments, and financial reports |
+| HRM & Expenses | Employee administration, recruitment, attendance, payroll, and reimbursement |
+
+## Team Responsibilities
+
+This project was collaboratively developed by five group members, with responsibilities divided according to business functions.
+
+| Team Member | Assigned Responsibilities |
+|---|---|
+| Angellica Ivana | Marketing & Accounting |
+| Dhany Prasetyo | CRM & Service |
+| Silmy Kaffa Anggita | Inventory & Purchasing |
+| Deka Syahristiani | Manufacturing & Quality Control |
+| Neng Audy Agustin | HRM & Expenses |
 
 ## My Individual Contribution
 
-My individual responsibilities focused on the HRM and Expenses modules in Odoo 18.
+My individual responsibilities focused on the implementation and documentation of Human Resource Management (HRM) and Expenses workflows using Odoo 18.
 
 ### 1. Human Resource Management (HRM)
 
-- Configured employee records and job positions.
-- Managed recruitment records and interview scheduling.
+- Created employee master data covering 12 active employees across business departments.
+- Configured job positions and their corresponding departments.
+- Implemented recruitment records for the Baker position, including applicant selection stages and interview scheduling.
 - Created employee contract records.
 - Recorded employee attendance and time-off data.
-- Documented employee performance evaluations.
-- Prepared payroll batches and recorded payroll payment processes.
+- Documented performance evaluations using Activity and Log Note in the Employees module.
+- Prepared a June 2026 payroll batch for five employees.
+- Recorded final payroll through Vendor Bill and Vendor Payment.
 
 ### 2. Expenses Management
 
-- Reviewed the Expenses dashboard.
-- Created and recorded employee expense claims.
-- Managed expense categories and reimbursement processes.
-- Processed employee reimbursement transactions.
+- Reviewed the Expenses dashboard to monitor employee expense records.
+- Created employee expense claims for operational activities.
+- Configured expense categories and the Employee to Reimburse payment method.
+- Processed employee reimbursement transactions until Paid status.
+- Reviewed expense summaries and employee expense records through the dashboard.
 
-### 3. Business Process Modeling
+### 3. Business Process Modeling (BPMN)
 
-- Analyzed HR business processes.
-- Modeled HR workflows using Business Process Model and Notation (BPMN).
-- Documented business activities and process relationships.
+- Analyzed Human Resource business processes and operational workflows.
+- Modeled HRM workflows using Business Process Model and Notation (BPMN).
+- Represented recruitment, employee administration, attendance, time off, performance evaluation, expense claims, and payroll activities.
+- Documented relationships between business activities and their corresponding system processes.
+
+## ERP Implementation & Testing
+
+The group project included module-level testing and end-to-end process scenarios to examine how business activities were represented and connected within Odoo.
+
+The group report documented successful module-level testing for HRM and Expenses, including:
+
+- Employee and job position management.
+- Recruitment and applicant records.
+- Employee contracts, attendance, and time off.
+- Payroll batch processing.
+- Expense claims and reimbursement.
+- Expense dashboard and employee expense summaries.
 
 ## Tools & Technologies
 
-- Odoo 18 ERP
-- Odoo Employees
-- Odoo Recruitment
-- Odoo Attendances
-- Odoo Time Off
-- Odoo Expenses
-- Odoo Invoicing
-- OCA Payroll
-- Business Process Model and Notation (BPMN)
+| Tool / Technology | Purpose |
+|---|---|
+| Odoo 18 ERP | ERP implementation and business process simulation |
+| PostgreSQL | Database management |
+| Draw.io | BPMN process modeling |
+| OCA Payroll | Payroll batch processing |
+| Google Docs | Collaborative project documentation |
 
-## Project Documentation
+**Odoo Modules Used:**
 
-This repository contains selected documentation and implementation evidence related to my individual contribution.
+Employees, Recruitment, Attendances, Time Off, Expenses, Invoicing, CRM, Sales, Point of Sale, Inventory, Purchase, Manufacturing, Quality, Accounting, Project, and Email Marketing.
 
-- Business process diagrams
-- Odoo implementation screenshots
-- HRM and Expenses documentation
-- Individual implementation report
+## Implementation Notes & Limitations
+
+Several implementation adjustments were made to accommodate the available Odoo configuration:
+
+- **Performance Evaluation:** The Appraisals module was unavailable, so performance evaluation activities were documented through Activity and Log Note in the Employees module.
+- **Payroll Processing:** The OCA Payroll confirmation workflow could not be completed because the Salary Journal configuration was not fully available. Final payroll was therefore recorded through Vendor Bill and Vendor Payment.
+- **Approval Workflows:** Some multi-level approval activities were represented through document statuses and manual processes.
+- **System Environment:** The project used simulated business data and was developed for academic implementation purposes, not as a live production ERP deployment.
+
+## Repository Documentation
+
+This repository contains selected documentation and implementation evidence.
+
+- `docs/` – Project overview and implementation documentation.
+- `diagrams/` – BPMN diagrams for HRM business processes.
+- `screenshots/HRM/` – HRM module configuration and implementation evidence.
+- `screenshots/Expenses/` – Expenses and reimbursement implementation evidence.
 
 ## Project Information
 
-- **Project:** MAKO Cake and Bakery ERP Implementation
-- **Project Type:** Group Academic Project
-- **Course:** Integrasi dan Kustomisasi ERP
-- **Institution:** Universitas Esa Unggul
-- **Year:** 2026
+| Detail | Information |
+|---|---|
+| Project Name | MAKO Cake and Bakery – Odoo 18 ERP Implementation |
+| Project Type | Academic Group Project |
+| Course | Integrasi dan Kustomisasi ERP (KJ001) |
+| Institution | Universitas Esa Unggul |
+| Study Program | Information Systems |
+| Year | 2026 |
 
 ## Author
 
@@ -82,3 +143,5 @@ This repository contains selected documentation and implementation evidence rela
 
 Information Systems Student  
 Universitas Esa Unggul
+
+My individual contribution focused on HRM, Expenses, and Business Process Modeling within the group project.
