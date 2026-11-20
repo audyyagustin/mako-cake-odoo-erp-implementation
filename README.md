@@ -220,9 +220,20 @@ The expense claims documented in the individual implementation were internal com
 
 The implementation was conducted as an academic ERP simulation using sample business data. It was not a live production deployment.
 
-## Repository Structure
 
-The repository is organized to separate project documentation, process diagrams, and individual implementation evidence.
+## Project Documentation
+
+Explore the project documentation and selected implementation evidence below.
+
+| Documentation | Description |
+|---|---|
+| [Project Overview](docs/project-overview.md) | Background, objectives, and overall project scope |
+| [Individual Contribution](docs/individual-contribution.md) | Detailed documentation of my HRM and Expenses implementation |
+| [HRM BPMN Diagram](diagrams/BPMN_HRM.png) | Business process modeling for HRM workflows |
+| [HRM Implementation Evidence](screenshots/HRM/) | Selected screenshots of HRM configuration and implementation |
+| [Expenses Implementation Evidence](screenshots/Expenses/) | Selected screenshots of expense claims and reimbursement |
+
+## Repository Structure
 
 ```text
 mako-cake-odoo-erp-implementation/
@@ -231,26 +242,16 @@ mako-cake-odoo-erp-implementation/
 │
 ├── docs/
 │   ├── project-overview.md
-│   ├── individual-contribution.md
-│   └── implementation-report.pdf
+│   └── individual-contribution.md
 │
 ├── diagrams/
-│   └── HRM_BPMN.png
+│   ├── BPMN_HRM.png
+│   └── README.md
 │
 └── screenshots/
     ├── HRM/
-    │   ├── employee-management/
-    │   ├── recruitment/
-    │   ├── attendance-time-off/
-    │   └── payroll/
-    │
     └── Expenses/
-        ├── expenses-dashboard/
-        ├── expense-claims/
-        └── reimbursement/
 ```
-
-*Documentation and screenshots will be added progressively after review and preparation for public sharing.*
 
 ## Project Information
 
